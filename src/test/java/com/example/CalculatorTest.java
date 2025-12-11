@@ -15,4 +15,22 @@ class CalculatorTest {
         Calculator calc = new Calculator();
         assertEquals(1, calc.subtract(3, 2));
     }
+
+    @Test
+    void testMultiply() {
+        Calculator calc = new Calculator();
+        assertEquals(6, calc.multiply(2, 3));
+    }
+
+    @Test
+    void testDivide() {
+        Calculator calc = new Calculator();
+        assertEquals(2, calc.divide(6, 3));
+    }
+
+    @Test
+    void testSqrt() {
+        Calculator calc = new Calculator();
+        assertEquals(3.0, calc.sqrt(9.0), 0.0001);
+    }
 }

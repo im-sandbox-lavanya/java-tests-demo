@@ -16,4 +16,8 @@ public class Calculator {
     public int divide(int a, int b) {
         return a / b;
     }
+
+    public double sqrt(double a) {
+        return Math.sqrt(a);
+    }
 }
