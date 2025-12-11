@@ -21,6 +21,9 @@ public class Calculator {
     }
 
     public double sqrt(double a) {
+        if (a < 0) {
+            throw new IllegalArgumentException("Cannot calculate square root of negative number");
+        }
         return Math.sqrt(a);
     }
 }
