@@ -29,6 +29,12 @@ class CalculatorTest {
     }
 
     @Test
+    void testDivideByZero() {
+        Calculator calc = new Calculator();
+        assertThrows(IllegalArgumentException.class, () -> calc.divide(5, 0));
+    }
+
+    @Test
     void testSqrt() {
         Calculator calc = new Calculator();
         assertEquals(3.0, calc.sqrt(9.0), 0.0001);
